@@ -1,0 +1,47 @@
+{
+    "title": "ESP32 IoT 开发指南",
+    "description": "本系列文章由 ET Team@QinYUN575为 ESP32 在物联网的实际应用开发而撰写",
+    "author": "QinYUN575",
+    "language": "zh-hans",
+    "styles": {
+        "website": "styles/website.css"
+    },
+    "plugins": [
+        "-lunr",
+        "-search",
+        "-sharing",
+        "search-plus",
+        "insert-logo",
+        "splitter",
+        "copy-code-button",
+        "terminal",
+        "pageview-count",
+        "tbfed-pagefooter",
+        "back-to-top-button",
+        "anchor-navigation-ex",
+        "puml",
+        "popup",
+        "collapsible-chapters"
+    ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "showLevel": false,
+            "showGoTop": false
+        },
+        "tbfed-pagefooter": {
+            "copyright":"Copyright &copy qinun575@foxmail.com 2019",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "2019-11-29 08:57:00"
+        },
+        "insert-logo": {
+            "url": "/docs/_static/aurora_lighting_logo.png",
+            "style": "background: none;"
+        },
+        "terminal": {
+            "copyButtons": false,
+            "fade": false,
+            "style": "flat"
+        },
+        "chapter-fold":{}
+    }
+}
