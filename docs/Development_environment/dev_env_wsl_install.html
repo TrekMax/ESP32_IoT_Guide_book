@@ -1,0 +1,1549 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>WSL 简明使用教程 — 安装&配置 · ESP32 IoT 开发指南</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="QinYUN575">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-insert-logo/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-pageview-count/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dev_env_wsl_install_2.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../contents/esp32_iot_guide_contents.html">
+            
+                <a href="../contents/esp32_iot_guide_contents.html">
+            
+                    
+                    ESP32 IoT 开发指南 总纲
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    一、ESP32 开发环境搭建
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="dev_env_wsl_install.html">
+            
+                <a href="dev_env_wsl_install.html">
+            
+                    
+                    WSL 简明使用教程 — 安装&配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="dev_env_wsl_install_2.html">
+            
+                <a href="dev_env_wsl_install_2.html">
+            
+                    
+                    WSL + VS Code 搭建 ESP32 开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="dev_env_esp-tools_install.html">
+            
+                <a href="dev_env_esp-tools_install.html">
+            
+                    
+                    ESP-IDF 安装器 + VS Code 搭建 ESP32 开发环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    二、ESP32 IoT 开发框架与编译系统
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" >
+            
+                <span>
+            
+                    
+                    ESP-IDF SDK 框架解析
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP-IDF SDK 结构 - 组件(components)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP-IDF SDK 结构 - Kconfig(components)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP-IDF 构建系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" >
+            
+                <span>
+            
+                    
+                    GUN Make 构建系统
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2.2" >
+            
+                <span>
+            
+                    
+                    CMake 构建系统
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    三、ESP32 基础开发指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" >
+            
+                <span>
+            
+                    
+                    ESP32 常用外设开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" >
+            
+                <span>
+            
+                    
+                    ESP32 GPIO 操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" >
+            
+                <span>
+            
+                    
+                    ESP32 UART 操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" >
+            
+                <span>
+            
+                    
+                    ESP32 IIC 操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" >
+            
+                <span>
+            
+                    
+                    ESP32 SPI 操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" >
+            
+                <span>
+            
+                    
+                    ESP32 SDIO 操作
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" >
+            
+                <span>
+            
+                    
+                     ESP32 WIFI & Internet 开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" >
+            
+                <span>
+            
+                    
+                    ESP32 连接 WIFI AP(Station 模式)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" >
+            
+                <span>
+            
+                    
+                    ESP32 创建 Soft AP(Soft AP 模式)
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.3" >
+            
+                <span>
+            
+                    
+                    ESP32 Station + Soft AP共存
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                     ESP32 BLE 例程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Bluetooth &&BLE 基础知识扫盲
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    BLE 协议栈 - 物理层(Physical Layout)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    BLE 协议栈 - 链路层(Link Layout)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    BLE 协议栈 - HCI(Host Controller Interface)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    BLE 协议栈 - L2CAP(Logical Link Control and Adaptation Protocol)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    BLE 协议栈 - ATT(Attribute Protocol)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.6" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    BLE 协议栈 - GATT(General Agreement on Tariffs and Trade)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.1.7" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    BLE 协议栈 - GAP(Generic Access Profile)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    四、ESP32 进阶开发指南
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32_FreeRTOS 内核开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS任务管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS软件定时器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS事件标志组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS信号量-二值信号量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS信号量-优先级翻转
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS信号量-互斥信号量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS消息队列
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="../Guide_freertos/esp32_freertos.html">
+            
+                <a href="../Guide_freertos/esp32_freertos.html">
+            
+                    
+                    ESP32FreeRTOS任务通知
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" >
+            
+                <span>
+            
+                    
+                    ESP32 功能组件开发
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" >
+            
+                <span>
+            
+                    
+                    ESP32 控制台组件 - Console
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" >
+            
+                <span>
+            
+                    
+                    ESP32 文本处理组件 - cJSON
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP32 ESP-IDF 协议开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    MQTT 协议开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    MQTT 基础知识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    HTTP/HTTPS 协议开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.2.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    HTTP 基础知识 - TCP 连接三次握手,断开四次握手
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    HTTP 基础知识 - GET/POST
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Websocket 协议开发
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP32 对接云端开发
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 阿里智能云平台
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 腾讯 IoT Explorer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 华为 HiLink
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 京东小京鱼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 百度天工(百度物平台)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.6" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 Google IoT Core
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.7" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 AWS-IoT
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.8" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    对接 AZURE
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP32 ESP-IDF 框架/组件分析
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP32 ESP-IDF 框架/组件分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    ESP32 ESP-IDF EVENT 框架分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    五、ESP32 高级开发指南(待更新)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" >
+            
+                <span>
+            
+                    
+                    ESP32 应用例程(待更新)
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    六、AURORA 蓝牙网关(更新中)
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="../aurora_ble_gateway/README.md">
+            
+                <span>
+            
+                    
+                    AURORA ESP32 SDK 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="../aurora_ble_gateway/README.md">
+            
+                <span>
+            
+                    
+                    AURORA ESP32 SDK 框架/组件分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    七、开发工具及使用技巧
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" >
+            
+                <span>
+            
+                    
+                    开发工具 - VS Code
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="../utils_tools/dev_tools_shell.html">
+            
+                <a href="../utils_tools/dev_tools_shell.html">
+            
+                    
+                    开发工具 - 常用 shell 命令/脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" >
+            
+                <span>
+            
+                    
+                    开发工具 - make 命令/脚本
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" >
+            
+                <span>
+            
+                    
+                    开发工具 - git 命令/脚本
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" >
+            
+                <span>
+            
+                    
+                    开发工具 - python 命令/脚本
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.6" >
+            
+                <span>
+            
+                    
+                    开发工具 - Kconfig 使用
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.7" >
+            
+                <span>
+            
+                    
+                    开发工具 - Postman/PostWoman 使用
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.8" >
+            
+                <span>
+            
+                    
+                    开发调试/编辑软件/工具 - 推荐
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    结束
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >WSL 简明使用教程 — 安装&配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><ul><li><span class="title-icon "></span><a href="#&#x4E00;&#x3001;&#x524D;&#x8A00;"><b></b>&#x4E00;&#x3001;&#x524D;&#x8A00;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x4EC0;&#x4E48;&#x662F;-wsl"><b></b>1.&#x4EC0;&#x4E48;&#x662F; WSL</a></li><li><span class="title-icon "></span><a href="#2wsl-&#x80FD;&#x505A;&#x4EC0;&#x4E48;"><b></b>2.WSL &#x80FD;&#x505A;&#x4EC0;&#x4E48;</a></li><li><span class="title-icon "></span><a href="#3&#x524D;&#x671F;&#x51C6;&#x5907;"><b></b>3.&#x524D;&#x671F;&#x51C6;&#x5907;</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E8C;&#x3001;&#x5B89;&#x88C5;-wsl"><b></b>&#x4E8C;&#x3001;&#x5B89;&#x88C5; WSL</a></li><ul><li><span class="title-icon "></span><a href="#1windows-10-&#x5F00;&#x542F;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F;--&#x6253;&#x5F00;-linux-&#x5B50;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;"><b></b>1.Windows 10 &#x5F00;&#x542F;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F; &amp; &#x6253;&#x5F00; Linux &#x5B50;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;</a></li><li><span class="title-icon "></span><a href="#2&#x4F7F;&#x7528;-microsoft-&#x5E94;&#x7528;&#x5546;&#x57CE;-&#x5B89;&#x88C5;-wsl"><b></b>2.&#x4F7F;&#x7528; Microsoft &#x5E94;&#x7528;&#x5546;&#x57CE; &#x5B89;&#x88C5; WSL</a></li></ul><li><span class="title-icon "></span><a href="#&#x4E09;&#x3001;&#x5BF9;-wsl-&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x914D;&#x7F6E;"><b></b>&#x4E09;&#x3001;.&#x5BF9; WSL &#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x914D;&#x7F6E;</a></li><ul><li><span class="title-icon "></span><a href="#1&#x5207;&#x6362;&#x8F6F;&#x4EF6;&#x6E90;&#x4E3A;-&#x963F;&#x91CC;&#x6E90;&#x6E05;&#x534E;&#x6E90;"><b></b>1.&#x5207;&#x6362;&#x8F6F;&#x4EF6;&#x6E90;&#x4E3A; &#x963F;&#x91CC;&#x6E90;/&#x6E05;&#x534E;&#x6E90;</a></li><li><span class="title-icon "></span><a href="#2&#x7F29;&#x77ED;&#x663E;&#x793A;&#x8DEF;&#x5F84;"><b></b>2.&#x7F29;&#x77ED;&#x663E;&#x793A;&#x8DEF;&#x5F84;</a></li></ul><li><span class="title-icon "></span><a href="#3vim-&#x7F16;&#x8F91;&#x5668;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x884C;&#x53F7;"><b></b>3.VIM &#x7F16;&#x8F91;&#x5668;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x884C;&#x53F7;</a></li><li><span class="title-icon "></span><a href="#4-&#x5B89;&#x88C5;-screefetch--&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x88C5;x&#x5DE5;&#x5177;"><b></b>4. &#x5B89;&#x88C5; screefetch  &#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;(&#x88C5;X&#x5DE5;&#x5177;)</a></li><li><span class="title-icon "></span><a href="#&#x56DB;&#x3001;&#x5728;-visual-studio-code-&#x4E2D;&#x4F7F;&#x7528;-wsl-&#x505A;&#x4E3A;&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;"><b></b>&#x56DB;&#x3001;&#x5728; Visual Studio Code &#x4E2D;&#x4F7F;&#x7528; WSL &#x505A;&#x4E3A;&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;</a></li></ul></ul></div><h2 id="&#x4E00;&#x3001;&#x524D;&#x8A00;"><a name="&#x4E00;&#x3001;&#x524D;&#x8A00;" class="anchor-navigation-ex-anchor" href="#&#x4E00;&#x3001;&#x524D;&#x8A00;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E00;&#x3001;&#x524D;&#x8A00;</h2>
+<p><strong>&#x6458;&#x8981;:</strong></p>
+<p>&#x200B;    &#x5728;&#x672C;&#x6559;&#x7A0B;&#x4E2D;,&#x6211;&#x4EEC;&#x5C06;&#x7B80;&#x77ED;&#x7684;&#x4E86;&#x89E3;&#x4EC0;&#x4E48;&#x662F; <strong>WSL</strong>, <strong>WSL</strong> &#x7684;&#x5B89;&#x88C5;&#x548C;&#x4E00;&#x4E9B;&#x5E38;&#x89C4;&#x7684;&#x914D;&#x7F6E;, &#x8BDD;&#x4E0D;&#x591A;&#x8BF4;,&#x90A3;&#x6211;&#x4EEC;&#x5F00;&#x59CB;&#x5427;&#xFF01;</p>
+<p>&#x5173;&#x952E;&#x8BCD;: <code>WSL</code>  <code>Windows 10</code>  <code>Bash</code>  <code>Ubuntu</code>  <code>Linux</code></p>
+<p><img src="../_static/development_env/dev_env_wsl_001.png" align="center" width="800" alt="Microsoft Love Linux"></p>
+<h3 id="1&#x4EC0;&#x4E48;&#x662F;-wsl"><a name="1&#x4EC0;&#x4E48;&#x662F;-wsl" class="anchor-navigation-ex-anchor" href="#1&#x4EC0;&#x4E48;&#x662F;-wsl"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x4EC0;&#x4E48;&#x662F; <a href="https://zh.wikipedia.org/wiki/%E9%80%82%E7%94%A8%E4%BA%8E_Linux_%E7%9A%84_Windows_%E5%AD%90%E7%B3%BB%E7%BB%9F" target="_blank">WSL</a></h3>
+<p>&#x200B;    <strong>WSL</strong> &#x5373;  <strong>&#x201D;Windows Subsystem for Linux&#x201D;</strong>  &#x7684;&#x7F29;&#x5199;,&#x987E;&#x540D;&#x601D;&#x4E49;,<code>WSL</code> &#x5C31;&#x662F; Windows &#x7CFB;&#x7EDF;&#x4E0B;&#x7684; Linux &#x5B50;&#x7CFB;&#x7EDF;,<strong>WSL</strong> &#x4F5C;&#x4E3A; <code>Windows</code> &#x7684;&#x7EC4;&#x4EF6;&#x642D;&#x8F7D;&#x5728; <strong>Windows 10</strong> &#x5468;&#x5E74;&#x66F4;&#x65B0;(<strong>1607</strong>) &#x4E4B;&#x540E;&#x7684;&#x7CFB;&#x7EDF;&#x4E2D;.</p>
+<p>&#x200B;    <strong>WSL</strong> &#x521A;&#x51FA;&#x6765;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x6709; <strong>Ubuntu 16</strong> &#x8FD9;&#x4E2A;&#x53D1;&#x884C;&#x7248;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;,&#x800C;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x6709;&#x5F88;&#x591A; <strong>Linux</strong> &#x5B50;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x4F9B;&#x6211;&#x4EEC;&#x4F7F;&#x7528;&#x4E86;.</p>
+<p><img src="../_static/development_env/dev_env_wsl_002.png" align="center" width="800" alt="Microsoft Store"></p>
+<p>&#x200B;    &#x5BF9;&#x4E8E;&#x8BB8;&#x591A;&#x56FD;&#x5185;&#x7684;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x8BF4;,Windows &#x624D;&#x662F;&#x4E3B;&#x8981;&#x7684;&#x5F00;&#x53D1;&#x73AF;&#x5883;,&#x4F46;&#x5BF9;&#x4E8E;&#x4E00;&#x4E9B;&#x60F3;&#x8981;&#x5C1D;&#x8BD5; Linux &#x7684;&#x5F00;&#x53D1;&#x8005;&#x6765;&#x8BF4;,&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x56E0;&#x4E3A;&#x4E00;&#x4E9B; Windows &#x72EC;&#x4EAB;&#x7684;&#x5F00;&#x53D1;&#x8F6F;&#x4EF6;,&#x800C;&#x4E0D;&#x5F97;&#x4E0D;&#x5728; Windows &#x548C; Linux &#x4E4B;&#x95F4;&#x6765;&#x56DE;&#x5207;&#x6362;,&#x5B9E;&#x5728;&#x9EBB;&#x70E6;. &#x73B0;&#x5728;&#x6709;&#x4E86; <strong>WSL</strong> ,&#x5728; Windows &#x4E0B;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5; Linux &#x7684;&#x9B45;&#x529B;,&#x53C8;&#x53EF;&#x4EE5;&#x629B;&#x5F03;&#x96BE;&#x7528;&#x5230;&#x6076;&#x5FC3;&#x7684; <strong>CMD</strong> &#x4E86;.</p>
+<h3 id="2wsl-&#x80FD;&#x505A;&#x4EC0;&#x4E48;"><a name="2wsl-&#x80FD;&#x505A;&#x4EC0;&#x4E48;" class="anchor-navigation-ex-anchor" href="#2wsl-&#x80FD;&#x505A;&#x4EC0;&#x4E48;"><i class="fa fa-link" aria-hidden="true"></i></a>2.WSL &#x80FD;&#x505A;&#x4EC0;&#x4E48;</h3>
+<p>&#x200B;    &#x65E2;&#x7136;&#x662F; <strong>Linux</strong> &#x5B50;&#x7CFB;&#x7EDF;,&#x90A3;&#x4FBF;&#x662F;&#x53EF;&#x4EE5;&#x548C; Linux &#x4E00;&#x6837;,&#x5F53;&#x7136;&#x7531;&#x4E8E;&#x662F; Windows &#x7CFB;&#x7EDF;,&#x6545;&#x4E00;&#x4E9B;&#x5173;&#x4E8E;&#x786C;&#x4EF6;&#x7684;&#x9A71;&#x52A8;&#x7684;&#x76F8;&#x5173;&#x9A71;&#x52A8;&#x4FBF;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x5B8C;&#x5584;,&#x8BE6;&#x60C5;&#x8BF7;&#x81EA;&#x5DF1; Google.</p>
+<h3 id="3&#x524D;&#x671F;&#x51C6;&#x5907;"><a name="3&#x524D;&#x671F;&#x51C6;&#x5907;" class="anchor-navigation-ex-anchor" href="#3&#x524D;&#x671F;&#x51C6;&#x5907;"><i class="fa fa-link" aria-hidden="true"></i></a>3.&#x524D;&#x671F;&#x51C6;&#x5907;</h3>
+<ul>
+<li>Windows 10  (&#x7248;&#x672C;&#x53F7;&gt;1607)</li>
+<li>Microsoft &#x8D26;&#x53F7;&#x7528;&#x4E8E;&#x767B;&#x9646; Microsoft Store</li>
+<li>&#x8010;&#x5FC3;</li>
+</ul>
+<h2 id="&#x4E8C;&#x3001;&#x5B89;&#x88C5;-wsl"><a name="&#x4E8C;&#x3001;&#x5B89;&#x88C5;-wsl" class="anchor-navigation-ex-anchor" href="#&#x4E8C;&#x3001;&#x5B89;&#x88C5;-wsl"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E8C;&#x3001;&#x5B89;&#x88C5; WSL</h2>
+<h3 id="1windows-10-&#x5F00;&#x542F;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F;--&#x6253;&#x5F00;-linux-&#x5B50;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;"><a name="1windows-10-&#x5F00;&#x542F;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F;--&#x6253;&#x5F00;-linux-&#x5B50;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;" class="anchor-navigation-ex-anchor" href="#1windows-10-&#x5F00;&#x542F;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F;--&#x6253;&#x5F00;-linux-&#x5B50;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;"><i class="fa fa-link" aria-hidden="true"></i></a>1.Windows 10 &#x5F00;&#x542F;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F; &amp; &#x6253;&#x5F00; Linux &#x5B50;&#x7CFB;&#x7EDF;&#x529F;&#x80FD;</h3>
+<p>1.&#x8BBE;&#x7F6E;&#x754C;&#x9762;&#x6253;&#x5F00;&#x5F00;&#x53D1;&#x8005;&#x6A21;&#x5F0F;</p>
+<p><img src="../_static/development_env/dev_env_wsl_003.png" align="center" width="800" alt="Developer Mode"></p>
+<p>2.&#x7A0B;&#x5E8F;&#x548C;&#x529F;&#x80FD;-&gt;&#x542F;&#x7528;&#x6216;&#x5173;&#x95ED; Windows &#x529F;&#x80FD; -&gt;  &#x52FE;&#x9009;&#x9002;&#x7528;&#x4E8E; Linux &#x7684; Windows &#x5B50;&#x7CFB;&#x7EDF;</p>
+<p><img src="../_static/development_env/dev_env_wsl_004.png" align="center" width="800" alt="WSL enable 1">
+<img src="../_static/development_env/dev_env_wsl_005.png" align="center" width="800" alt="WSL enable 2"></p>
+<p>3.&#x91CD;&#x542F;&#x7535;&#x8111;</p>
+<h3 id="2&#x4F7F;&#x7528;-microsoft-&#x5E94;&#x7528;&#x5546;&#x57CE;-&#x5B89;&#x88C5;-wsl"><a name="2&#x4F7F;&#x7528;-microsoft-&#x5E94;&#x7528;&#x5546;&#x57CE;-&#x5B89;&#x88C5;-wsl" class="anchor-navigation-ex-anchor" href="#2&#x4F7F;&#x7528;-microsoft-&#x5E94;&#x7528;&#x5546;&#x57CE;-&#x5B89;&#x88C5;-wsl"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x4F7F;&#x7528; Microsoft &#x5E94;&#x7528;&#x5546;&#x57CE; &#x5B89;&#x88C5; WSL</h3>
+<p>1.&#x6253;&#x5F00;&#x5E76;&#x7528;&#x5FAE;&#x8F6F;&#x8D26;&#x53F7;&#x767B;&#x9646; Microsoft Store,&#x641C;&#x7D22;&#x5B89;&#x88C5; Linux &#x5B50;&#x7CFB;&#x7EDF;&#x53D1;&#x884C;&#x7248;&#x672C;: Ubuntu (Ubuntu 18)</p>
+<p><img src="../_static/development_env/dev_env_wsl_006.png" align="center" width="800" alt="Install WSL 1"></p>
+<p><img src="../_static/development_env/dev_env_wsl_007.png" align="center" width="800" alt="Install WSL 2"></p>
+<p><img src="../_static/development_env/dev_env_wsl_008.png" align="center" width="800" alt="Install WSL 3"></p>
+<p>2.&#x542F;&#x52A8; <strong>WSL</strong>,&#x914D;&#x7F6E; linux &#x7528;&#x6237;&#x8D26;&#x6237;&#x540D;&#x79F0;&#x4E0E;&#x5BC6;&#x7801;</p>
+<p>1.&#x521D;&#x59CB;&#x5316; WSL &#x9700;&#x8981;&#x5927;&#x6982; 5 &#x5206;&#x949F;,&#x8010;&#x5FC3;&#x7B49;&#x5F85;</p>
+<p><img src="../_static/development_env/dev_env_wsl_009.png" align="center" width="800" alt="Install WSL 4"></p>
+<p>2.&#x8F93;&#x5165; Linux &#x7528;&#x6237; &#x540D;&#x79F0;&amp;&#x5BC6;&#x7801;&#xFF08;&#x5BC6;&#x7801;&#x8F93;&#x5165;&#x65F6;&#x4E0D;&#x53EF;&#x89C1;,&#x8F93;&#x5165;&#x4E24;&#x6B21;&#x786E;&#x8BA4;&#xFF09;</p>
+<h2 id="&#x4E09;&#x3001;&#x5BF9;-wsl-&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x914D;&#x7F6E;"><a name="&#x4E09;&#x3001;&#x5BF9;-wsl-&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x914D;&#x7F6E;" class="anchor-navigation-ex-anchor" href="#&#x4E09;&#x3001;&#x5BF9;-wsl-&#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x914D;&#x7F6E;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E09;&#x3001;.&#x5BF9; WSL &#x8FDB;&#x884C;&#x4E00;&#x4E9B;&#x57FA;&#x672C;&#x914D;&#x7F6E;</h2>
+<h3 id="1&#x5207;&#x6362;&#x8F6F;&#x4EF6;&#x6E90;&#x4E3A;-&#x963F;&#x91CC;&#x6E90;&#x6E05;&#x534E;&#x6E90;"><a name="1&#x5207;&#x6362;&#x8F6F;&#x4EF6;&#x6E90;&#x4E3A;-&#x963F;&#x91CC;&#x6E90;&#x6E05;&#x534E;&#x6E90;" class="anchor-navigation-ex-anchor" href="#1&#x5207;&#x6362;&#x8F6F;&#x4EF6;&#x6E90;&#x4E3A;-&#x963F;&#x91CC;&#x6E90;&#x6E05;&#x534E;&#x6E90;"><i class="fa fa-link" aria-hidden="true"></i></a>1.&#x5207;&#x6362;&#x8F6F;&#x4EF6;&#x6E90;&#x4E3A; &#x963F;&#x91CC;&#x6E90;/&#x6E05;&#x534E;&#x6E90;</h3>
+<p>1.&#x5728; <strong>WSL</strong> &#x4E2D;&#x8F93;&#x5165;</p>
+<pre><code class="lang-shell">**[terminal]
+**[command sudo vim /etc/apt/sources.list]
+</code></pre>
+<p>&#x8F93;&#x5165;<code>:%d</code>,&#x5220;&#x9664;&#x6240;&#x6709;&#x5185;&#x5BB9;,&#x4E4B;&#x540E;&#x6309; <code>i</code> &#x952E;&#x8FDB;&#x5165;<code>&#x63D2;&#x5165;&#x6A21;&#x5F0F;</code>,</p>
+<p><img src="../_static/development_env/dev_env_wsl_010.png" align="center" width="800" alt="Install WSL 5"></p>
+<p>2.&#x6253;&#x5F00;&#x963F;&#x91CC;&#x6E90;&#xFF08;<a href="https://opsx.alibaba.com/mirror" target="_blank">&#x963F;&#x91CC;&#x5DF4;&#x5DF4;&#x5F00;&#x6E90;&#x955C;&#x50CF;&#x7AD9; </a><a href="https://opsx.alibaba.com/mirror" target="_blank">https://opsx.alibaba.com/mirror</a>&#xFF09;</p>
+<p><img src="../_static/development_env/dev_env_wsl_011.png" align="center" width="800" alt="Install WSL 6"></p>
+<p>&#x627E;&#x5230; <code>Ubuntu</code> &#x70B9;&#x51FB;&#x5E2E;&#x52A9;,&#x590D;&#x5236; <code>Ubuntu 18</code> &#x7684;&#x914D;&#x7F6E;&#x6E90;,&#x5E76;&#x7C98;&#x8D34;&#x5230; <code>WSL bash</code> &#x7A97;&#x53E3;&#x4E2D;</p>
+<p><img src="../_static/development_env/dev_env_wsl_012.png" align="center" width="800" alt="Install WSL 7"></p>
+<p>ubuntu 18.04(bionic) &#x914D;&#x7F6E;&#x6E90;&#x5982;&#x4E0B;</p>
+<pre><code class="lang-shell">**[terminal]
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+</code></pre>
+<p>&#x6309; <code>ESC</code> &#x952E;&#x9000;&#x51FA;&#x63D2;&#x5165;&#x6A21;&#x5F0F;,&#x8F93;&#x5165; <code>:wq</code> &#x4FDD;&#x5B58;&#x5E76;&#x9000;&#x51FA;</p>
+<p><img src="../_static/development_env/dev_env_wsl_013.png" align="center" width="800" alt="Install WSL 8"></p>
+<p>&#x4F9D;&#x6B64;&#x8F93;&#x5165;&#x4E0B;&#x9762;&#x4E24;&#x6761;&#x547D;&#x4EE4;&#x66F4;&#x65B0;&#x8F6F;&#x4EF6;</p>
+<pre><code>**[terminal]
+**[command sudo apt update]
+**[command sudo apt upgrade -y]
+</code></pre><p><img src="../_static/development_env/dev_env_wsl_014.png" align="center" width="800" alt="Install WSL 9"></p>
+<h3 id="2&#x7F29;&#x77ED;&#x663E;&#x793A;&#x8DEF;&#x5F84;"><a name="2&#x7F29;&#x77ED;&#x663E;&#x793A;&#x8DEF;&#x5F84;" class="anchor-navigation-ex-anchor" href="#2&#x7F29;&#x77ED;&#x663E;&#x793A;&#x8DEF;&#x5F84;"><i class="fa fa-link" aria-hidden="true"></i></a>2.&#x7F29;&#x77ED;&#x663E;&#x793A;&#x8DEF;&#x5F84;</h3>
+<p>&#x5F53;&#x8FDB;&#x5165;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x7684;&#x65F6;&#x5019;,&#x7531;&#x4E8E;Linux&#x7EC8;&#x7AEF;&#x547D;&#x4EE4;&#x884C;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x7684;&#x5168;&#x90E8;&#x8DEF;&#x5F84;,&#x6709;&#x65F6;&#x8FC7;&#x957F;,&#x770B;&#x7740;&#x5F88;&#x4E0D;&#x8212;&#x670D;,&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x914D;&#x7F6E;,&#x8BA9;&#x5176;&#x4EC5;&#x4EC5;&#x663E;&#x793A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x540D;&#x79F0;.</p>
+<p>&#x914D;&#x7F6E;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<p>1.&#x4FEE;&#x6539; <code>.bashrc</code> &#x6587;&#x4EF6;(&#x7528;&#x6237;&#x6839;&#x76EE;&#x5F55;&#x4E0B;) <code>vim</code> &#x6253;&#x5F00; <code>.bashrc</code> &#x6587;&#x4EF6;,</p>
+<pre><code class="lang-shell">**[terminal]
+**[command vim ~/.bashrc]
+</code></pre>
+<p>&#x627E;&#x5230;&#x5982;&#x4E0B;&#x8FD9;&#x884C;&#xFF08;&#x4EE5;&#x5B9E;&#x9645;&#x4EE3;&#x7801;&#x6240;&#x5728;&#x884C;&#x4E3A;&#x51C6;&#xFF09;&#xFF1A;</p>
+<pre><code class="lang-shell">**[terminal]
+   PS1=&apos;${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ &apos;
+</code></pre>
+<p><img src="../_static/development_env/dev_env_wsl_015.png" align="center" width="800" alt="Install WSL 10"></p>
+<p>&#x5C06;&#x4E0A;&#x9762;&#x8FD9;&#x884C;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x5C0F;&#x5199; <code>w</code> &#x6539;&#x4E3A;&#x5927;&#x5199;&#x7684; <code>W</code>, &#x4FDD;&#x5B58;&#x9000;&#x51FA; (<code>wq</code>)</p>
+<p>2.&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x6267;&#x884C; <code>source ~/.bashrc</code> &#x4F7F;&#x5176;&#x751F;&#x6548;</p>
+<p>&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x4E24;&#x6B65;&#x64CD;&#x4F5C;&#x4E4B;&#x540E;,&#x91CD;&#x65B0;&#x8FDB;&#x5165;&#x5230;&#x4E00;&#x4E2A;&#x76EE;&#x5F55;,&#x6B64;&#x65F6;&#x5728;&#x7EC8;&#x7AEF;&#x4E0B;&#x53EA;&#x663E;&#x793A;&#x5F53;&#x524D;&#x6587;&#x4EF6;&#x6240;&#x5728;&#x76EE;&#x5F55;&#x540D;&#x79F0;.</p>
+<p>&#x66F4;&#x6539;&#x524D;&#x6548;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-shell">**[terminal]
+**[prompt musk@ASUS-Laptop]**[path /etc/vim]**[delimiter $]
+</code></pre>
+<p>&#x66F4;&#x6539;&#x540E;&#x6548;&#x679C;&#xFF1A;</p>
+<pre><code class="lang-shell">**[terminal]
+**[prompt musk@ASUS-Laptop]**[path vim]**[delimiter $]
+</code></pre>
+<h2 id="3vim-&#x7F16;&#x8F91;&#x5668;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x884C;&#x53F7;"><a name="3vim-&#x7F16;&#x8F91;&#x5668;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x884C;&#x53F7;" class="anchor-navigation-ex-anchor" href="#3vim-&#x7F16;&#x8F91;&#x5668;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x884C;&#x53F7;"><i class="fa fa-link" aria-hidden="true"></i></a>3.VIM &#x7F16;&#x8F91;&#x5668;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x884C;&#x53F7;</h2>
+<p>1.&#x6253;&#x5F00; <code>WSL Bash</code>,&#x4F7F;&#x7528; <code>vim</code> &#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</p>
+<pre><code class="lang-shell">**[terminal]
+**[command sudo vim /etc/vim/vimrc]
+</code></pre>
+<p>2.&#x5728;&#x6587;&#x4EF6;&#x4E2D;&#x4EFB;&#x610F;&#x4F4D;&#x7F6E;&#x6DFB;&#x52A0;&#x4E00;&#x884C;</p>
+<pre><code class="lang-shell">**[terminal]
+**[command set number]
+</code></pre>
+<p>&#x4E5F;&#x53EF;&#x7F29;&#x5199;&#x6210;</p>
+<pre><code class="lang-shell">**[terminal]
+**[command set nu]
+</code></pre>
+<h2 id="4-&#x5B89;&#x88C5;-screefetch--&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x88C5;x&#x5DE5;&#x5177;"><a name="4-&#x5B89;&#x88C5;-screefetch--&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x88C5;x&#x5DE5;&#x5177;" class="anchor-navigation-ex-anchor" href="#4-&#x5B89;&#x88C5;-screefetch--&#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;&#x88C5;x&#x5DE5;&#x5177;"><i class="fa fa-link" aria-hidden="true"></i></a>4. &#x5B89;&#x88C5; screefetch  &#x663E;&#x793A;&#x7CFB;&#x7EDF;&#x4FE1;&#x606F;(&#x88C5;X&#x5DE5;&#x5177;)</h2>
+<pre><code class="lang-shell">**[terminal]
+**[command sudo apt install screenfetch -y]
+</code></pre>
+<h2 id="&#x56DB;&#x3001;&#x5728;-visual-studio-code-&#x4E2D;&#x4F7F;&#x7528;-wsl-&#x505A;&#x4E3A;&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;"><a name="&#x56DB;&#x3001;&#x5728;-visual-studio-code-&#x4E2D;&#x4F7F;&#x7528;-wsl-&#x505A;&#x4E3A;&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;" class="anchor-navigation-ex-anchor" href="#&#x56DB;&#x3001;&#x5728;-visual-studio-code-&#x4E2D;&#x4F7F;&#x7528;-wsl-&#x505A;&#x4E3A;&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x56DB;&#x3001;&#x5728; Visual Studio Code &#x4E2D;&#x4F7F;&#x7528; WSL &#x505A;&#x4E3A;&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;</h2>
+<p>&#xA0;&#xA0;&#xA0;&#xA0;&#x5728;&#x63A8;&#x8350; <code>WSL</code> &#x7684;&#x540C;&#x65F6;,&#x6211;&#x8981;&#x5411;&#x4F60;&#x63A8;&#x8350;&#x4E00;&#x6B3E;&#x5728;&#x5FAE;&#x8F6F;&#x62E5;&#x62B1;&#x5F00;&#x6E90;&#x4E16;&#x754C;&#x4E4B;&#x540E;&#x63A8;&#x51FA;&#x7684; <strong><code>&#x5F00;&#x6E90;</code></strong>&#x3001;<strong><code>&#x5F3A;&#x5927;</code></strong>&#x3001;<strong><code>&#x8F7B;&#x91CF;</code></strong> &#x7684;<strong>&#x5168;&#x80FD;</strong>&#x7F16;&#x8F91;&#x5668; &#x2014;&#x2014; <strong><code>VS Code</code></strong>, &#x6765;&#x642D;&#x914D; <code>WSL</code> &#x4F5C;&#x4E3A;&#x6211;&#x4EEC;&#x65E5;&#x5E38;&#x5F00;&#x53D1;&#x73AF;&#x5883;;</p>
+<p>&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x63A5;&#x4E0B;&#x6765;&#x5C31;&#x5B89;&#x88C5; <code>VSCode</code> &#x5E76;&#x5C06; WSL &#x914D;&#x7F6E;&#x4E3A; VSCode &#x7684;&#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;</p>
+<ul>
+<li>&#x4E0B;&#x8F7D;&#x5B89;&#x88C5; <code>VSCode</code></li>
+</ul>
+<p>&#x7F51;&#x9875;&#x641C;&#x7D22; <code>VSCode</code>, &#x6253;&#x5F00; <a href="https://code.visualstudio.com/" target="_blank">VSCode &#x5B98;&#x7F51;</a>, &#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x9009;&#x62E9;&#x4E0B;&#x8F7D; <code>Windows x64</code></p>
+<p><img src="../_static/development_env/dev_env_wsl_016.png" align="center" width="800" alt="VScode Office web page"></p>
+<p>&#x6839;&#x636E;&#x5B89;&#x88C5;&#x63D0;&#x793A;&#x7684;&#x5B8C;&#x6210;&#x5B89;&#x88C5;&#x5373;&#x53EF;(&#x5177;&#x4F53;&#x5B89;&#x88C5;&#x7EC6;&#x8282;&#x8BF7;&#x81EA;&#x884C; Google)</p>
+<p><img src="../_static/development_env/dev_env_wsl_017.png" align="center" width="800" alt="VScode Office web page"></p>
+<ul>
+<li>&#x5C06; VS Code &#x7EC8;&#x7AEF;&#x914D;&#x7F6E;&#x4E3A; <code>WSL</code></li>
+</ul>
+<p>&#x5728; <code>Windows</code> &#x4E0A; <code>VS Code</code> &#x9ED8;&#x8BA4;&#x7EC8;&#x7AEF;&#x91C7;&#x7528;&#x7684; <code>shell</code> &#x4E3A; <code>CMD</code>, &#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x5C06;&#x5176;&#x5207;&#x6362;&#x4E3A; <code>WSL</code></p>
+<p><img src="../_static/development_env/dev_env_wsl_018.gif" align="center" width="800" alt="VScode Office web page"></p>
+<p><code>Ctrl+Shfit+P</code> &#x6253;&#x5F00;&#x547D;&#x4EE4;&#x6267;&#x884C;&#x680F;,&#x8F93;&#x5165; <code>shell</code> &#x9009;&#x62E9; <code>WSL</code>,
+`Ctrl+`` &#x5373;&#x53EF;&#x6253;&#x5F00; VS Code &#x7EC8;&#x7AEF;&#x7A97;&#x53E3;.</p>
+<ul>
+<li>&#x66F4;&#x591A; <code>VS Code</code> &#x4F7F;&#x7528;&#x6280;&#x5DE7;&#x8BF7;&#x81EA;&#x884C; <code>Google</code></li>
+</ul>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; qinun575@foxmail.com 2019 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2019-11-29 08:57:00
+</span></footer>
+<script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="dev_env_wsl_install_2.html" class="navigation navigation-next navigation-unique" aria-label="Next page: WSL + VS Code 搭建 ESP32 开发环境">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"WSL 简明使用教程 — 安装&配置","level":"1.3.1","depth":2,"next":{"title":"WSL + VS Code 搭建 ESP32 开发环境","level":"1.3.2","depth":2,"path":"docs/Development_environment/dev_env_wsl_install_2.md","ref":"./docs/Development_environment/dev_env_wsl_install_2.md","articles":[]},"previous":{"title":"一、ESP32 开发环境搭建","level":"1.3","depth":1,"ref":"","articles":[{"title":"WSL 简明使用教程 — 安装&配置","level":"1.3.1","depth":2,"path":"docs/Development_environment/dev_env_wsl_install.md","ref":"./docs/Development_environment/dev_env_wsl_install.md","articles":[]},{"title":"WSL + VS Code 搭建 ESP32 开发环境","level":"1.3.2","depth":2,"path":"docs/Development_environment/dev_env_wsl_install_2.md","ref":"./docs/Development_environment/dev_env_wsl_install_2.md","articles":[]},{"title":"ESP-IDF 安装器 + VS Code 搭建 ESP32 开发环境","level":"1.3.3","depth":2,"path":"docs/Development_environment/dev_env_esp-tools_install.md","ref":"./docs/Development_environment/dev_env_esp-tools_install.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","insert-logo","splitter","copy-code-button","terminal","pageview-count","tbfed-pagefooter","back-to-top-button","anchor-navigation-ex","puml","popup","collapsible-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy qinun575@foxmail.com 2019","modify_label":"该文件修订时间：","modify_format":"2019-11-29 08:57:00"},"chapter-fold":{},"puml":{},"splitter":{},"collapsible-chapters":{},"popup":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"terminal":{"copyButtons":false,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"/docs/_static/aurora_lighting_logo.png"},"search-plus":{}},"theme":"default","author":"QinYUN575","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ESP32 IoT 开发指南","language":"zh-hans","gitbook":"*","description":"本系列文章由 ET Team@QinYUN575为 ESP32 在物联网的实际应用开发而撰写"},"file":{"path":"docs/Development_environment/dev_env_wsl_install.md","mtime":"2019-11-29T01:31:24.245Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-02T08:17:34.083Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-insert-logo/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-copy-code-button/toggle.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
