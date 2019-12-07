@@ -33,7 +33,11 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-pageview-count/plugin.css">
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
                 
             
                 
@@ -46,6 +50,22 @@
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-alerts/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-pageview-count/plugin.css">
                 
             
                 
@@ -127,7 +147,7 @@
                 <a href="docs/contents/esp32_iot_guide_contents.html">
             
                     
-                    ESP32 IoT 开发指南 总纲
+                    ESP32 IoT 开发指南 总序
             
                 </a>
             
@@ -193,28 +213,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" >
+        <li class="chapter active" data-level="1.4" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     二、ESP32 IoT 开发框架与编译系统
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.1" >
+        <li class="chapter active" data-level="1.4.1" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     ESP-IDF SDK 框架解析
             
-                </span>
+                </a>
             
 
             
@@ -226,7 +246,7 @@
                 <a href="./">
             
                     
-                    ESP-IDF SDK 结构 - 组件(components)
+                    ESP-IDF SDK 结构 - 组件(components) && kconfig
             
                 </a>
             
@@ -239,7 +259,7 @@
                 <a href="./">
             
                     
-                    ESP-IDF SDK 结构 - Kconfig(components)
+                    ESP-IDF 构建系统 - GUN make
             
                 </a>
             
@@ -247,17 +267,35 @@
             
         </li>
     
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.4.2" data-path="./">
+        <li class="chapter active" data-level="1.4.1.3" data-path="./">
             
                 <a href="./">
             
                     
-                    ESP-IDF 构建系统
+                    ESP-IDF 构建系统 - Cmake
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    三、ESP32 基础开发指南
             
                 </a>
             
@@ -266,64 +304,14 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.4.2.1" >
+        <li class="chapter active" data-level="1.5.1" data-path="./">
             
-                <span>
-            
-                    
-                    GUN Make 构建系统
-            
-                </span>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4.2.2" >
-            
-                <span>
-            
-                    
-                    CMake 构建系统
-            
-                </span>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" >
-            
-                <span>
-            
-                    
-                    三、ESP32 基础开发指南
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.5.1" >
-            
-                <span>
+                <a href="./">
             
                     
                     ESP32 常用外设开发
             
-                </span>
+                </a>
             
 
             
@@ -400,28 +388,28 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" >
+        <li class="chapter active" data-level="1.5.2" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
-                     ESP32 WIFI & Internet 开发
+                     ESP32 WIFI & Internet 开发(更新中)
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.2.1" >
+        <li class="chapter " data-level="1.5.2.1" data-path="docs/Guide_bass_class/wiif_internet_gui/wifi_station.md">
             
                 <span>
             
                     
                     ESP32 连接 WIFI AP(Station 模式)
             
-                </span>
+                </a>
             
 
             
@@ -463,7 +451,7 @@
                 <a href="./">
             
                     
-                     ESP32 BLE 例程
+                     ESP32 BLE 例程(待更新)
             
                 </a>
             
@@ -592,14 +580,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" >
+        <li class="chapter active" data-level="1.6" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     四、ESP32 进阶开发指南
             
-                </span>
+                </a>
             
 
             
@@ -611,7 +599,7 @@
                 <a href="docs/Guide_freertos/esp32_freertos.html">
             
                     
-                    ESP32_FreeRTOS 内核开发
+                    ESP32_FreeRTOS 内核开发(更新中)
             
                 </a>
             
@@ -677,7 +665,7 @@
                 <a href="docs/Guide_freertos/esp32_freertos.html">
             
                     
-                    ESP32FreeRTOS信号量-优先级翻转
+                    ESP32FreeRTOS信号量-互斥信号量
             
                 </a>
             
@@ -690,7 +678,7 @@
                 <a href="docs/Guide_freertos/esp32_freertos.html">
             
                     
-                    ESP32FreeRTOS信号量-互斥信号量
+                    ESP32FreeRTOS信号量-优先级翻转
             
                 </a>
             
@@ -729,41 +717,41 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" >
+        <li class="chapter active" data-level="1.6.2" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
-                    ESP32 功能组件开发
+                    ESP32 功能组件开发(更新中)
             
-                </span>
+                </a>
             
 
             
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.2.1" >
+        <li class="chapter active" data-level="1.6.2.1" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     ESP32 控制台组件 - Console
             
-                </span>
+                </a>
             
 
             
         </li>
     
-        <li class="chapter " data-level="1.6.2.2" >
+        <li class="chapter active" data-level="1.6.2.2" data-path="./">
             
-                <span>
+                <a href="./">
             
                     
                     ESP32 文本处理组件 - cJSON
             
-                </span>
+                </a>
             
 
             
@@ -779,7 +767,7 @@
                 <a href="./">
             
                     
-                    ESP32 ESP-IDF 协议开发
+                    ESP32 ESP-IDF 协议开发(更新中)
             
                 </a>
             
@@ -888,7 +876,7 @@
                 <a href="./">
             
                     
-                    ESP32 对接云端开发
+                    ESP32 对接云端开发(待更新)
             
                 </a>
             
@@ -1063,89 +1051,12 @@
         
         
     
-        <li class="chapter " data-level="2.1" >
-            
-                <span>
-            
-                    
-                    五、ESP32 高级开发指南(待更新)
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.1.1" >
-            
-                <span>
-            
-                    
-                    ESP32 应用例程(待更新)
-            
-                </span>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2" >
-            
-                <span>
-            
-                    
-                    六、AURORA 蓝牙网关(更新中)
-            
-                </span>
-            
-
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="2.2.1" data-path="docs/aurora_ble_gateway/README.md">
-            
-                <span>
-            
-                    
-                    AURORA ESP32 SDK 简介
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="2.2.2" data-path="docs/aurora_ble_gateway/README.md">
-            
-                <span>
-            
-                    
-                    AURORA ESP32 SDK 框架/组件分析
-            
-                </a>
-            
-
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter active" data-level="2.3" data-path="./">
+        <li class="chapter active" data-level="2.1" data-path="./">
             
                 <a href="./">
             
                     
-                    七、开发工具及使用技巧
+                    五、ESP32 高级开发指南(待更新)
             
                 </a>
             
@@ -1154,7 +1065,39 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.3.1" >
+        <li class="chapter active" data-level="2.1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ESP32 应用例程(待更新)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    六、开发工具及使用技巧(更新中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" >
             
                 <span>
             
@@ -1167,7 +1110,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.2" data-path="docs/utils_tools/dev_tools_shell.html">
+        <li class="chapter " data-level="2.2.2" data-path="docs/utils_tools/dev_tools_shell.html">
             
                 <a href="docs/utils_tools/dev_tools_shell.html">
             
@@ -1180,7 +1123,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.3" >
+        <li class="chapter " data-level="2.2.3" >
             
                 <span>
             
@@ -1193,7 +1136,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.4" >
+        <li class="chapter " data-level="2.2.4" >
             
                 <span>
             
@@ -1206,7 +1149,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.5" >
+        <li class="chapter " data-level="2.2.5" >
             
                 <span>
             
@@ -1219,7 +1162,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.6" >
+        <li class="chapter " data-level="2.2.6" >
             
                 <span>
             
@@ -1232,7 +1175,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.7" >
+        <li class="chapter " data-level="2.2.7" >
             
                 <span>
             
@@ -1245,7 +1188,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.8" >
+        <li class="chapter " data-level="2.2.8" >
             
                 <span>
             
@@ -1263,7 +1206,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" >
+        <li class="chapter " data-level="2.3" >
             
                 <span>
             
@@ -1321,7 +1264,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#esp32-iot-&#x5F00;&#x53D1;&#x6307;&#x5357;"><b></b>ESP32 IoT &#x5F00;&#x53D1;&#x6307;&#x5357;</a></li></ul></div><p><img src="docs/_static/Introduction/esp32_banner.png" align="center" width="800" alt="ESP32 IoT Guide"></p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#esp32-iot-&#x5F00;&#x53D1;&#x6307;&#x5357;"><b></b>ESP32 IoT &#x5F00;&#x53D1;&#x6307;&#x5357;</a></li></ul></div><p><a href="docs/_static/Introduction/esp32_banner.png" data-lightbox="b77d12ba-3cd2-4e20-a47a-e853ebb2ee7c" data-title="ESP32 IoT Guide"><img src="docs/_static/Introduction/esp32_banner.png" alt="ESP32 IoT Guide"></a></p>
 <h1 id="esp32-iot-&#x5F00;&#x53D1;&#x6307;&#x5357;"><a name="esp32-iot-&#x5F00;&#x53D1;&#x6307;&#x5357;" class="anchor-navigation-ex-anchor" href="#esp32-iot-&#x5F00;&#x53D1;&#x6307;&#x5357;"><i class="fa fa-link" aria-hidden="true"></i></a>ESP32 IoT &#x5F00;&#x53D1;&#x6307;&#x5357;</h1>
 <p>&#x672C;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x7531; <strong>ET Team</strong>@<a href="https://qinyun575.cn" target="_blank">QinYUN575</a> &#x4E3A; ESP32 &#x5728;&#x7269;&#x8054;&#x7F51;&#x7684;&#x5B9E;&#x9645;&#x5E94;&#x7528;&#x5F00;&#x53D1;&#x800C;&#x64B0;&#x5199;</p>
 <hr>
@@ -1333,10 +1276,10 @@
 <li>&#x5982;&#x679C;&#x672C;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x5BF9;&#x4F60;&#x6709;&#x5E2E;&#x52A9;&#xFF0C;&#x8BF7;&#x52A8;&#x52A8;&#x5C0F;&#x624B;&#x5206;&#x4EAB;&#x7ED9;&#x4F60;&#x7684;&#x670B;&#x53CB;&#xFF0C;&#x8C22;&#x8C22;&#xFF01;</li>
 </ul>
 <p align="right">&#x2014;&#x2014; &#x7801;&#x4E8E; &#x4E09;&#x6708;&#x4E09;&#x53F7; &#x4E8C;&#x96F6;&#x4E00;&#x4E5D;&#x5E74;</p>
-<p align="right">&#x66F4;&#x65B0;&#x65F6;&#x95F4; V0.2@20191128</p>
+<p align="right">&#x66F4;&#x65B0;&#x65F6;&#x95F4; V0.2@20191207</p>
 
 <pre><code>**[terminal]
-**[prompt foo@joe]**[path ~]**[delimiter  $ ]**[command ./myscript]
+**[prompt musk@ASUS-Laptop:]**[path ~]**[delimiter  $]**[command ./myscript]
 Normal output line. Nothing special here...
 But...
 You can add some colors. What about a warning message?
@@ -1382,7 +1325,7 @@ What about an error message?
             
                 
                 
-                <a href="docs/contents/esp32_iot_guide_contents.html" class="navigation navigation-next navigation-unique" aria-label="Next page: ESP32 IoT 开发指南 总纲">
+                <a href="docs/contents/esp32_iot_guide_contents.html" class="navigation navigation-next navigation-unique" aria-label="Next page: ESP32 IoT 开发指南 总序">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -1393,7 +1336,7 @@ What about an error message?
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"简介","level":"1.1","depth":1,"next":{"title":"ESP32 IoT 开发指南 总纲","level":"1.2","depth":1,"path":"docs/contents/esp32_iot_guide_contents.md","ref":"./docs/contents/esp32_iot_guide_contents.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","insert-logo","splitter","copy-code-button","terminal","pageview-count","tbfed-pagefooter","back-to-top-button","anchor-navigation-ex","puml","popup","collapsible-chapters"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy qinun575@foxmail.com 2019","modify_label":"该文件修订时间：","modify_format":"2019-11-29 08:57:00"},"chapter-fold":{},"puml":{},"splitter":{},"collapsible-chapters":{},"popup":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"terminal":{"copyButtons":false,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"/docs/_static/aurora_lighting_logo.png"},"search-plus":{}},"theme":"default","author":"QinYUN575","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ESP32 IoT 开发指南","language":"zh-hans","gitbook":"*","description":"本系列文章由 ET Team@QinYUN575为 ESP32 在物联网的实际应用开发而撰写"},"file":{"path":"README.md","mtime":"2019-12-02T02:05:34.679Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-02T08:17:34.083Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"简介","level":"1.1","depth":1,"next":{"title":"ESP32 IoT 开发指南 总序","level":"1.2","depth":1,"path":"docs/contents/esp32_iot_guide_contents.md","ref":"./docs/contents/esp32_iot_guide_contents.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","search-plus","insert-logo","splitter","copy-code-button","terminal","expandable-chapters","chapter-fold","tbfed-pagefooter","back-to-top-button","anchor-navigation-ex","puml","popup","lightbox","auto-scroll-table","hide-element","todo","alerts","github","hide-element","pageview-count","collapsible-chapters","livereload"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright &copy qinun575@foxmail.com 2019","modify_label":"该文件修订时间：","modify_format":"2019-11-29 08:57:00"},"chapter-fold":{},"github":{"url":"https://github.com/QinYUN575/ESP32_IoT_Guide_book.git"},"puml":{},"livereload":{},"todo":{},"splitter":{},"collapsible-chapters":{},"auto-scroll-table":{},"popup":{},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":false,"showLevel":false},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"pageview-count":{},"alerts":{},"copy-code-button":{},"terminal":{"copyButtons":false,"fade":false,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"insert-logo":{"style":"background: none;","url":"/docs/_static/qinun575_logo.png"},"expandable-chapters":{},"search-plus":{}},"theme":"default","author":"QinYUN575","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ESP32 IoT 开发指南","language":"zh-hans","gitbook":"*","description":"本系列文章由 ET Team@QinYUN575为 ESP32 在物联网的实际应用开发而撰写"},"file":{"path":"README.md","mtime":"2019-12-06T18:09:09.571Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-12-07T00:26:49.377Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -1427,7 +1370,11 @@ What about an error message?
         
     
         
-        <script src="gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        <script src="gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
         
     
         
@@ -1435,7 +1382,35 @@ What about an error message?
         
     
         
+        <script src="gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-alerts/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-pageview-count/plugin.js"></script>
+        
+    
+        
         <script src="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
